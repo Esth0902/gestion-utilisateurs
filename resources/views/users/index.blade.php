@@ -1,5 +1,10 @@
 <x-app-layout>
     <div class="container mx-auto py-8">
+        @if(session('status'))
+            <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-2 rounded mb-4">
+                {{ session('status') }}
+            </div>
+        @endif
         <h1 class="text-2xl font-bold mb-6">Liste des Utilisateurs</h1>
 
         <table class="min-w-full bg-white border border-gray-200">
