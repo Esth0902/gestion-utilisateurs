@@ -24,4 +24,6 @@ Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 
 Route::put('/users/{id}', [UserController::class, 'update'])->name('users.update');
 
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.destroy');
+
 require __DIR__.'/auth.php';
